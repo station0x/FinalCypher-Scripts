@@ -1,8 +1,12 @@
 {
   "name": "finalcypher-scripts",
   "version": "1.0.0",
-  "main": "index.js",
+  "type": "module",
   "repository": "https://github.com/station0x/FinalCypher-Scripts.git",
   "author": "Captain Isaac A. <87286968+CaptainIsaaca@users.noreply.github.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "execa": "^6.1.0",
+    "ora": "^6.1.2"
+  }
 }
