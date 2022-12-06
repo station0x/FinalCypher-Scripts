@@ -1,0 +1,8 @@
+{
+  "name": "finalcypher-scripts",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/station0x/FinalCypher-Scripts.git",
+  "author": "Captain Isaac A. <87286968+CaptainIsaaca@users.noreply.github.com>",
+  "license": "MIT"
+}

@@ -1,0 +1,3 @@
+[submodule "flatten-directory"]
+    path = modules/flatten-directory
+    url = https://github.com/station0x/flatten-directory
