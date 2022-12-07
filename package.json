@@ -7,6 +7,7 @@
   "license": "MIT",
   "dependencies": {
     "execa": "^6.1.0",
+    "fs-extra": "^11.1.0",
     "ora": "^6.1.2"
   }
 }

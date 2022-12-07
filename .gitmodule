@@ -1,3 +1,6 @@
 [submodule "flatten-directory"]
     path = modules/flatten-directory
     url = https://github.com/station0x/flatten-directory
+[submodule "node-folder-hash"]
+    path = modules/node-folder-hash
+    url = https://github.com/station0x/node-folder-hash

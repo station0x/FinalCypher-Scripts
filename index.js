@@ -2,38 +2,48 @@ import { execa, execaNode } from 'execa';
 import fs from 'node:fs';
 import { oraPromise } from 'ora';
 
-async function moveBinaries() {
-  let extension = '';
+let clientDist = '../../Releases/Client/Windows'
 
-  if (process.platform === 'win32') {
-    extension = '.exe'
-  }
+async function writeMerkleTreeToStorage(data) {
+    // Preserve newlines, etc. - use valid JSON
+    // data = data.replace(/\\n/g, "\\n")
+    // .replace(/\\'/g, "\\'")
+    // .replace(/\\"/g, '\\"')
+    // .replace(/\\&/g, "\\&")
+    // .replace(/\\r/g, "\\r")
+    // .replace(/\\t/g, "\\t")
+    // .replace(/\\b/g, "\\b")
+    // .replace(/\\f/g, "\\f")
+    // // .replace(/\\n/g, "");
+    // // Remove non-printable and other non-valid JSON characters
+    // data = data.replace(/[\u0000-\u0019]+/g,"");
+    console.log(data)
+    fs.writeFileSync("merkle.json", JSON.stringify(data, null, 2) , 'utf-8');
+    let tree = JSON.parse(fs.readFileSync("merkle.json", "utf8"))
+    console.log(tree.name)
 
-  const rustInfo = (await execa('rustc', ['-vV'])).stdout;
-  const targetTriple = /host: (\S+)/g.exec(rustInfo)[1];
-
-  if (!targetTriple) {
-    console.error('Failed to determine platform target triple')
-  }
-
-  fs.renameSync(
-    `src-tauri/binaries/fc-core${extension}`,
-    `src-tauri/binaries/fc-core-${targetTriple}${extension}`
-  );
+    // fs.writeFile("merkle.json", JSON.stringify(data, null, "\t"), (err) => {
+    //     if (err)
+    //         console.log(err);
+    //     else {
+    //         console.log("File written successfully\n");
+    //         console.log("The written has the following contents:");
+    //         // console.log(JSON.parse(fs.readFileSync("merkle.json", "utf8")));
+    //     }
+    // });
 }
 
-async function createBundle() {
-  return execa('node_modules/.bin/esbuild', [
-    './server/index.cjs', '--bundle', '--outfile=dist/server.js', '--platform=node'
-  ]);
+async function constructMerkleTree() {
+    return execa('node_modules/.bin/folder-hash', [
+        `${clientDist}`
+    ]);
 }
 
 
 async function flattenBuild() {
-  // return execa('node_modules/.bin/pkg', ['package.json', '--output', 'src-tauri/binaries/fc-core']);
   try {
     return execaNode('modules/flatten-directory/dist/index.js', [
-        '--rootdir=../../Releases/Client/Windows',
+        `--rootdir=${clientDist}`,
         '--outputdir=client-flattened',
         '--seperator=@'
     ])
@@ -42,15 +52,25 @@ async function flattenBuild() {
     }
 }
 
-(async function main() {
-    oraPromise({ 
-        text: '[FC_SCRIPTS] Flattening Client Build...\n', 
-        successText: '[FC_SCRIPTS] Done\n', 
-        failText: '[FC_SCRIPTS] Cannot build server'
-})
+async function main() {
+    console.log('############################################')
+    console.log('Constructing Merkle Tree..')
+    console.log('############################################')
+    let merkleTree = await constructMerkleTree()
+    // console.log(merkleTree.stdout.toString())
+
+    console.log('############################################')
+    console.log('Writing Merkle Tree to File: [merkle.json].')
+    console.log('############################################')
+    await writeMerkleTreeToStorage(merkleTree)
+
+    console.log('############################################')
+    console.log('Flattening Client Build..')
+    console.log('############################################')
     await flattenBuild()
+
 
     // await createServerPackage();
     // await moveBinaries();
-})();
-// oraPromise(main(actionText), { text: `[FC_SCRIPTS] ${actionText}...\n`, successText: '[FC_SCRIPTS] Done\n', failText: '[FC_SCRIPTS] Cannot build server'});
+}
+oraPromise(main(), { text: `[FC_SCRIPTS] Integrating Build...\n`, successText: '[FC_SCRIPTS] Done\n', failText: '[FC_SCRIPTS] Cannot build server'});
