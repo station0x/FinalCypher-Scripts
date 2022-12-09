@@ -6,8 +6,11 @@
   "author": "Captain Isaac A. <87286968+CaptainIsaaca@users.noreply.github.com>",
   "license": "MIT",
   "dependencies": {
+    "@octokit/rest": "^19.0.5",
+    "dotenv": "^16.0.3",
     "execa": "^6.1.0",
     "fs-extra": "^11.1.0",
+    "object-traversal": "^1.0.1",
     "ora": "^6.1.2"
   }
 }

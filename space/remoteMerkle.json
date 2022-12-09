@@ -1,0 +1,254 @@
+{ "name": "Windows", "hash": "d2Pr8TgDLQX226mfnlEwi4iCyrg=",
+  "Windows@children": [
+    { "name": "Engine", "hash": "ckaVn75BLUudD+NpRQC1hrwgjNU=",
+      "Engine@children": [
+        { "name": "Binaries", "hash": "b2hWNef0au9h/0lrXE00sOMe7N8=",
+          "Binaries@children": [
+            { "name": "ThirdParty", "hash": "kBPArQUq7+VzNihz4qqBDoz+Kz8=",
+              "ThirdParty@children": [
+                { "name": "DbgHelp", "hash": "UnTuDvKXaa2xcDaC72Y2rZfbHP4=",
+                  "DbgHelp@children": [
+                    { "name": "dbghelp.dll", "hash": "whF00Mfcv8jZDzFwoMoVCpVKxuw=" }
+                  ]},
+                { "name": "NVIDIA", "hash": "u13IgZck6tuDKrRyWXjDtMBGW/Y=",
+                  "NVIDIA@children": [
+                    { "name": "GeForceNOW", "hash": "9FbawqlEoifV6QCcKYoouBD0Qmw=",
+                      "GeForceNOW@children": [
+                        { "name": "Win64", "hash": "fYblriH/X/FPnnv47q44KqObDKo=",
+                          "Win64@children": [
+                            { "name": "GfnRuntimeSdk.dll", "hash": "9f79pLmWax8BaPC4j/ndgggOCCU=" }
+                          ]}
+                      ]},
+                    { "name": "NVaftermath", "hash": "QKrCz5YeFYW7UmWUj+iV+Sh9Uzo=",
+                      "NVaftermath@children": [
+                        { "name": "Win64", "hash": "DHNAQ3SGoP0sH3VGKHqC4Fj3BSk=",
+                          "Win64@children": [
+                            { "name": "GFSDK_Aftermath_Lib.x64.dll", "hash": "eoecLDkwZrLKG2F0QNEAc8IJwFw=" }
+                          ]}
+                      ]}
+                  ]},
+                { "name": "Ogg", "hash": "F7DeGy+8ns4Jdp39eaIGGi3oLu0=",
+                  "Ogg@children": [
+                    { "name": "Win64", "hash": "fP1pvkcpY4z24kZZR3ktd/7wDtw=",
+                      "Win64@children": [
+                        { "name": "VS2015", "hash": "7cm/gh8AeWYtxj1wGyvE+9Ba99M=",
+                          "VS2015@children": [
+                            { "name": "libogg_64.dll", "hash": "FhdnZTKP1jC65NNaBogDUFbK1ww=" }
+                          ]}
+                      ]}
+                  ]},
+                { "name": "PhysX3", "hash": "2i4xIHkMrI2XYYmIPTRPKfi0ac0=",
+                  "PhysX3@children": [
+                    { "name": "Win64", "hash": "lfernOi3NDCCerSGzeou5pLMF9I=",
+                      "Win64@children": [
+                        { "name": "VS2015", "hash": "OJeCnheLsSOusWlUGepIwXUbXVo=",
+                          "VS2015@children": [
+                            { "name": "PhysX3_x64.dll", "hash": "KJt4Bso5muBw/oSPtskYKt8WlHc=" },
+                            { "name": "PhysX3Common_x64.dll", "hash": "blCmGKS6S0w/M7gSZgnoMA30nXo=" },
+                            { "name": "PhysX3Cooking_x64.dll", "hash": "ipQa/i7u+d0H1A5XjNdXqiJ3q8c=" },
+                            { "name": "PxFoundation_x64.dll", "hash": "fr8RHLf847KqzD+g7KruHUG5sJc=" },
+                            { "name": "PxPvdSDK_x64.dll", "hash": "hOaQ5f96I0iqO2Yi+HRCxUYbd64=" }
+                          ]}
+                      ]}
+                  ]},
+                { "name": "Steamworks", "hash": "OqU7nt+RPe2+bJ1kiJKrjCu1/hc=",
+                  "Steamworks@children": [
+                    { "name": "Steamv151", "hash": "x9TpCG5c7rP/lfFaO4OCvbxO3Ow=",
+                      "Steamv151@children": [
+                        { "name": "Win64", "hash": "duMuTEK6gC/SH5+XJPwfB084fEY=",
+                          "Win64@children": [
+                            { "name": "steam_api64.dll", "hash": "vfA2bea5x+M9ZUEm8hfK+vPPmgE=" }
+                          ]}
+                      ]}
+                  ]},
+                { "name": "Vorbis", "hash": "q7ctaIzQuAowznCgu2Pk6POGU3g=",
+                  "Vorbis@children": [
+                    { "name": "Win64", "hash": "JXDrMEBnB4lAEeqoowyNhCjyGv4=",
+                      "Win64@children": [
+                        { "name": "VS2015", "hash": "D3N9NliWv3zOkSfRxzCl6CtuNYg=",
+                          "VS2015@children": [
+                            { "name": "libvorbis_64.dll", "hash": "puq1k1hPwGxhPWkpNrbRwVsFN1c=" },
+                            { "name": "libvorbisfile_64.dll", "hash": "I7NGyIGjRrNwcKTh3ksD8TCu5fY=" }
+                          ]}
+                      ]}
+                  ]},
+                { "name": "Windows", "hash": "tIT92cN0kddOJ4SG6mWxOoVqUwc=",
+                  "Windows@children": [
+                    { "name": "XAudio2_9", "hash": "JVTzf8PWKAjL1qJVJMnitZPkOEU=",
+                      "XAudio2_9@children": [
+                        { "name": "x64", "hash": "sB3zm3MjGTnV0KZQdS7kYxMlbMI=",
+                          "x64@children": [
+                            { "name": "xaudio2_9redist.dll", "hash": "BGbUugcEh1PEKHSMWg2zzeO3tZg=" }
+                          ]}
+                      ]}
+                  ]}
+              ]}
+          ]},
+        { "name": "Extras", "hash": "c0I7Adb74yFU6LyeFyJN76oC3ms=",
+          "Extras@children": [
+            { "name": "Redist", "hash": "VLE0ZEkFJbeUnrgPZXCf3gbDsFs=",
+              "Redist@children": [
+                { "name": "en-us", "hash": "WR6upslYJIRI0MQZMrf6aiaDkfM=",
+                  "en-us@children": [
+                    { "name": "UEPrereqSetup_x64.exe", "hash": "6ur5DDVigE9D0l9oDw1/kTE2pVY=" }
+                  ]}
+              ]}
+          ]}
+      ]},
+    { "name": "FinalCypher", "hash": "Ib83uT4/KydZGkq5VmNzx16d1DI=",
+      "FinalCypher@children": [
+        { "name": "Binaries", "hash": "r7+XExKTzEbfxc1O+FqRAQQHMxI=",
+          "Binaries@children": [
+            { "name": "Win64", "hash": "+LHIElK2n/z1PPwDig8LjYzLbuM=",
+              "Win64@children": [
+                { "name": "api-ms-win-core-console-l1-1-0.dll", "hash": "v5ObEcPKO3mIzCDDwdpTOvOyR3A=" },
+                { "name": "api-ms-win-core-console-l1-2-0.dll", "hash": "k2fyKl0C8DPNmPKzKyOlanfVFMU=" },
+                { "name": "api-ms-win-core-datetime-l1-1-0.dll", "hash": "MwMn5oNwy5ffbJqvLmOgB/juZto=" },
+                { "name": "api-ms-win-core-debug-l1-1-0.dll", "hash": "c+H4bqBmL3l/uenDFNGVvpb++zI=" },
+                { "name": "api-ms-win-core-errorhandling-l1-1-0.dll", "hash": "I86HBYk4vV7F8CetncQGK8dHtI4=" },
+                { "name": "api-ms-win-core-file-l1-1-0.dll", "hash": "3xV4XO35P4K+DeM+NI+FXoxwGPU=" },
+                { "name": "api-ms-win-core-file-l1-2-0.dll", "hash": "VmZee5wJhN9vy5H4Nxi6ektlDk4=" },
+                { "name": "api-ms-win-core-file-l2-1-0.dll", "hash": "2qYwsFM/mkmrAgeSE2deeobvQMI=" },
+                { "name": "api-ms-win-core-handle-l1-1-0.dll", "hash": "4TXBJhnbTFhhO5laR5Kl8Sj9GH0=" },
+                { "name": "api-ms-win-core-heap-l1-1-0.dll", "hash": "zpdjIxrYvg9E+Na2f2W2c1c3Hh0=" },
+                { "name": "api-ms-win-core-interlocked-l1-1-0.dll", "hash": "qtl0Hqai6D+0fJEnCZTdkn94Hz0=" },
+                { "name": "api-ms-win-core-libraryloader-l1-1-0.dll", "hash": "wWGwHvXAQoKBEBzgyi4Tkqz1M00=" },
+                { "name": "api-ms-win-core-localization-l1-2-0.dll", "hash": "0gcAxl3K3ZaLgF+KwoE4HGNJnFA=" },
+                { "name": "api-ms-win-core-memory-l1-1-0.dll", "hash": "P/2mu2izW2PPNL1z9yclBuihnkY=" },
+                { "name": "api-ms-win-core-namedpipe-l1-1-0.dll", "hash": "dfuuFnFEFMOF+OQc0MfgfBDiFk4=" },
+                { "name": "api-ms-win-core-processenvironment-l1-1-0.dll", "hash": "h7ZjoqOKwXugndd1+2DKOP44YWY=" },
+                { "name": "api-ms-win-core-processthreads-l1-1-0.dll", "hash": "2T6Lcrkz1kpps6OifFAoJbRYIwU=" },
+                { "name": "api-ms-win-core-processthreads-l1-1-1.dll", "hash": "JQd+bsRIy2BkJQrWC8B5ArElT6o=" },
+                { "name": "api-ms-win-core-profile-l1-1-0.dll", "hash": "IIj4LCIz3GYZtBOoNNI05FK+n7k=" },
+                { "name": "api-ms-win-core-rtlsupport-l1-1-0.dll", "hash": "M9pom0zI9qlogktJ1OjQHi0O7MA=" },
+                { "name": "api-ms-win-core-string-l1-1-0.dll", "hash": "buYySMjC6cF/AjoIlZL13wUt38k=" },
+                { "name": "api-ms-win-core-synch-l1-1-0.dll", "hash": "c3RKqi8oH9x+51GEMBzx5nIBJyk=" },
+                { "name": "api-ms-win-core-synch-l1-2-0.dll", "hash": "+iJGTzUsb4LwsxC/ZpkxP4JWP0U=" },
+                { "name": "api-ms-win-core-sysinfo-l1-1-0.dll", "hash": "Iwk+jtIp71AUoRbxWiF3O/A49Do=" },
+                { "name": "api-ms-win-core-timezone-l1-1-0.dll", "hash": "YcyliD9JxBhUQW9A36O4JFKxLEY=" },
+                { "name": "api-ms-win-core-util-l1-1-0.dll", "hash": "VLnxl2ob0vIwfzRROPOvFaOsImo=" },
+                { "name": "api-ms-win-crt-conio-l1-1-0.dll", "hash": "+ZbdsD5AyV+SxLznr8s6pHe1Bsc=" },
+                { "name": "api-ms-win-crt-convert-l1-1-0.dll", "hash": "9zvFjmyjvU8az8AXhA6Fy2v2DQw=" },
+                { "name": "api-ms-win-crt-environment-l1-1-0.dll", "hash": "sWE56VT1vRKKa60TWdOWb7g60BU=" },
+                { "name": "api-ms-win-crt-filesystem-l1-1-0.dll", "hash": "hWPr8b5lVWHy6FqD1lLSyYKjAMg=" },
+                { "name": "api-ms-win-crt-heap-l1-1-0.dll", "hash": "gjmIPIGIT9idrIJCAKIovexiWrc=" },
+                { "name": "api-ms-win-crt-locale-l1-1-0.dll", "hash": "ZWzT50jMrKHM7jACop8hCuH068I=" },
+                { "name": "api-ms-win-crt-math-l1-1-0.dll", "hash": "ry2nPcggrBAg5o3h2LRPj0oQo2Y=" },
+                { "name": "api-ms-win-crt-multibyte-l1-1-0.dll", "hash": "UKJdTgdI+TGL4H16VzEMrN8qxcw=" },
+                { "name": "api-ms-win-crt-private-l1-1-0.dll", "hash": "p0f1IE6Jjs4Ix66+tEb0djwBAAA=" },
+                { "name": "api-ms-win-crt-process-l1-1-0.dll", "hash": "p9hsgrtY0qMBl6/0rLMjrrziPKY=" },
+                { "name": "api-ms-win-crt-runtime-l1-1-0.dll", "hash": "ZaKuI/JP3bjBL+052zg0cqj6u5w=" },
+                { "name": "api-ms-win-crt-stdio-l1-1-0.dll", "hash": "OfPj7XPcc37WFgfdVGqvlOHUh64=" },
+                { "name": "api-ms-win-crt-string-l1-1-0.dll", "hash": "20zKqrdwa+YCyIspehCxnmFRO5g=" },
+                { "name": "api-ms-win-crt-time-l1-1-0.dll", "hash": "5KLEqzu4jv1jeaEFvkV3x+6f0Dc=" },
+                { "name": "api-ms-win-crt-utility-l1-1-0.dll", "hash": "XW+GL+qS4gjrURMC8EI3TnJnhg8=" },
+                { "name": "concrt140.dll", "hash": "3NxCFagCNFd4Xa/0gHxolXP8X4s=" },
+                { "name": "D3D12", "hash": "Jk9Et+7lfLL8WRdUOar9fTQp/cE=",
+                  "D3D12@children": [
+                    { "name": "D3D12Core.dll", "hash": "BWRYXbonC/AB5S8CmCJMvx3aXlQ=" }
+                  ]},
+                { "name": "FinalCypher-Win64-Shipping.exe", "hash": "lRaUvkWYT5WJna3sYQ09BlGYmE8=" },
+                { "name": "msvcp100.dll", "hash": "2jvnCoYOiUqCQVVRhxHSypw2oGI=" },
+                { "name": "msvcp140_1.dll", "hash": "UitOQrAnlEMDICQPTiot+oa5e8A=" },
+                { "name": "msvcp140_2.dll", "hash": "N97f5OpLJAo//G+Kv29qVWUzh+g=" },
+                { "name": "msvcp140_codecvt_ids.dll", "hash": "Pvu/tpZW/c3NHYE4Pg5/SHRtofI=" },
+                { "name": "msvcp140.dll", "hash": "4tcjbjpHY+uKDPaFI3FLocUMHjc=" },
+                { "name": "msvcr100_clr0400.dll", "hash": "zHRhiEaSRb0md8GrV62TFXbu5GY=" },
+                { "name": "msvcr100.dll", "hash": "RLfhT416Hp2+8zsckyLkg40HjGU=" },
+                { "name": "OpenImageDenoise.dll", "hash": "N0FEPvD0l9BLAQr0LRJH3/R170A=" },
+                { "name": "tbb.dll", "hash": "xi/LaQhiY8Wdxkc4LYQX58yrcLs=" },
+                { "name": "tbb12.dll", "hash": "Mwwqfv9l0c8ch/gNwUBdR6f9/pk=" },
+                { "name": "ucrtbase.dll", "hash": "HECeWEH8LDpmPd9YboyVL8QfheE=" },
+                { "name": "vccorlib140.dll", "hash": "ZqZ0ovlZ9m87LxMbXiN+HdX8K2g=" },
+                { "name": "vcruntime140_1.dll", "hash": "OKe4G5muP+mESWwhXxH9aKH8TTk=" },
+                { "name": "vcruntime140.dll", "hash": "rkWl+WMIpsqzCivkgikjZODWkRg=" },
+                { "name": "X3DAudio1_7.dll", "hash": "C+gGoEXNVmTXKqOgcUj4igYuPz8=" },
+                { "name": "XAPOFX1_5.dll", "hash": "PzSJR86EC54WcxKMWpHHOakvPuU=" },
+                { "name": "XAudio2_7.dll", "hash": "gdSdqrR49o3dnMK20EtjiZJJdKM=" },
+                { "name": "xinput1_3.dll", "hash": "kY9XW6v12H8huoU1YiR0uS6x1ek=" }
+              ]}
+          ]},
+        { "name": "Content", "hash": "cjxunUBDnLnHO+YzTXoQG1WeSxk=",
+          "Content@children": [
+            { "name": "Movies", "hash": "R90T81EBu8/bznFAlaHlDyr9eag=",
+              "Movies@children": [
+                { "name": "KillsAnimations", "hash": "QBB924TZe/2r9OmjyE4diIC4PTo=",
+                  "KillsAnimations@children": [
+                    { "name": "1kill.avi", "hash": "aWrR3phmvmUz4u6ObhJQdetidSI=" },
+                    { "name": "2kills.avi", "hash": "toZ/jI+LnmP+nNB5z+PpVj9Q5Zw=" },
+                    { "name": "3kills.avi", "hash": "LpZaTqxgNjVxYzpEFP3a7Z8V3kU=" },
+                    { "name": "4kills.avi", "hash": "J4DtJK88DzR2gGHOHEBEzigh4zk=" },
+                    { "name": "ace.avi", "hash": "AHbgyxW4r4dMDx6y7/sUjW7p/9I=" }
+                  ]}
+              ]},
+            { "name": "Paks", "hash": "bsaLwxA+2JNLvDKNTMXP6e8EKDA=",
+              "Paks@children": [
+                { "name": "pakchunk0-Windows.pak", "hash": "mYguRHh69Si7QJKiDT/qZMpFjqA=" },
+                { "name": "pakchunk2_s1-Windows.pak", "hash": "JgaQlgTO4wX+WM+NNIKFKbUuFlI=" },
+                { "name": "pakchunk2_s10-Windows.pak", "hash": "XhjnLHdFh/KsQN7Zzp1D9VNhTkI=" },
+                { "name": "pakchunk2_s11-Windows.pak", "hash": "Gt7weHubdO/OYEXeswPlxArC8+w=" },
+                { "name": "pakchunk2_s12-Windows.pak", "hash": "iT6izrRgLU1tu+JjCfLBm/OQzNQ=" },
+                { "name": "pakchunk2_s13-Windows.pak", "hash": "9w5rU+9NuzE/0uoh2fDC2nuhOvY=" },
+                { "name": "pakchunk2_s14-Windows.pak", "hash": "KPUJgEPXG5UqPFStRvt+rDcuuls=" },
+                { "name": "pakchunk2_s15-Windows.pak", "hash": "Vh8Zv9Z9xFIMAEdLA6sIfRNfWGo=" },
+                { "name": "pakchunk2_s16-Windows.pak", "hash": "R2UUPN/vDK04zEP93x0x21YWCCo=" },
+                { "name": "pakchunk2_s17-Windows.pak", "hash": "MsdVd8U7Rd7Le7mgpr1Qh9/avmc=" },
+                { "name": "pakchunk2_s18-Windows.pak", "hash": "NlpaKAw6YqRj5oMCSQ5kk7SjnoA=" },
+                { "name": "pakchunk2_s19-Windows.pak", "hash": "yUSZF4QPu29BGzh7qjDgD1u7LZs=" },
+                { "name": "pakchunk2_s2-Windows.pak", "hash": "xz2OkyWxepKY3c9UxEy+5/531Jg=" },
+                { "name": "pakchunk2_s20-Windows.pak", "hash": "4rXQwZ7i3RzwDYY6si1zPsko0bA=" },
+                { "name": "pakchunk2_s21-Windows.pak", "hash": "myvfUTLLyiNzzLNUAIoiBcKWRLo=" },
+                { "name": "pakchunk2_s22-Windows.pak", "hash": "5VtP7cecceDOGtPc3+rsSMe5CRI=" },
+                { "name": "pakchunk2_s23-Windows.pak", "hash": "qxAsjO4CBaiQI6tJLKt6PEKCpkk=" },
+                { "name": "pakchunk2_s24-Windows.pak", "hash": "S0rYPGXd5Eif4CHDsUyefi2CRvA=" },
+                { "name": "pakchunk2_s25-Windows.pak", "hash": "vtRIk0rZ22nIl0SjKG3fEIxvl8w=" },
+                { "name": "pakchunk2_s26-Windows.pak", "hash": "KJODKzB+WE0Z4vTd2GiV0bkhMSw=" },
+                { "name": "pakchunk2_s27-Windows.pak", "hash": "PdWziEN7p83pL3ztveOTozNgYt8=" },
+                { "name": "pakchunk2_s28-Windows.pak", "hash": "vaCBBRzm6DnerXxfFn7qgFPKL9w=" },
+                { "name": "pakchunk2_s29-Windows.pak", "hash": "OVu57q4a52fYPxGDgE/7DB7ZQko=" },
+                { "name": "pakchunk2_s3-Windows.pak", "hash": "jrHCIUYSNk4QVKWRIZMR2DRY6yk=" },
+                { "name": "pakchunk2_s30-Windows.pak", "hash": "VC6FCXn92GV/oa3A+0nyPghH6/s=" },
+                { "name": "pakchunk2_s31-Windows.pak", "hash": "vOhhbBbxDICjjWjJO4D+SOvUD2M=" },
+                { "name": "pakchunk2_s32-Windows.pak", "hash": "ry2I2j7DUp5D9SicHvNn8iEbNa4=" },
+                { "name": "pakchunk2_s33-Windows.pak", "hash": "owKxNOBe0x5Vy3SdzUi/7thB948=" },
+                { "name": "pakchunk2_s34-Windows.pak", "hash": "+noyluLaYrQ3qMURMpU0PM9Ea5c=" },
+                { "name": "pakchunk2_s35-Windows.pak", "hash": "IWe+Q112iG+R+3r0phrSt/mauPU=" },
+                { "name": "pakchunk2_s36-Windows.pak", "hash": "3OUEGbDlpVPIaGj1wozb1NtSAkY=" },
+                { "name": "pakchunk2_s37-Windows.pak", "hash": "x5eozKwh4rC/p+YQzzx+h7FjKp4=" },
+                { "name": "pakchunk2_s38-Windows.pak", "hash": "wDu0bgYyvpJ7Xq2CO2VnqkdFv4s=" },
+                { "name": "pakchunk2_s39-Windows.pak", "hash": "JjsP1U7t842MMiDPL2raSsM2pcQ=" },
+                { "name": "pakchunk2_s4-Windows.pak", "hash": "puz9Ec/RGwQgjGI+KsT+1Vs1F0c=" },
+                { "name": "pakchunk2_s40-Windows.pak", "hash": "33BIw795ogIC7yrLpxuThseQC2g=" },
+                { "name": "pakchunk2_s41-Windows.pak", "hash": "4r32J/FnFxxnhH22ks9W118CqCc=" },
+                { "name": "pakchunk2_s42-Windows.pak", "hash": "3YRVZSS72VVYrHznqxzNFxXeRMY=" },
+                { "name": "pakchunk2_s43-Windows.pak", "hash": "LRmbQPLDHw+EhKU0aRT5c00nmuM=" },
+                { "name": "pakchunk2_s44-Windows.pak", "hash": "7RB94tzBPgFXyp6c7Is36mQSM3s=" },
+                { "name": "pakchunk2_s45-Windows.pak", "hash": "gXXw76Sg2x66emVZp02WMtTo8uk=" },
+                { "name": "pakchunk2_s46-Windows.pak", "hash": "xRsunw+iH66XbA7a59kqv5ZndgU=" },
+                { "name": "pakchunk2_s47-Windows.pak", "hash": "SQTv5YLvAFykE/bsd6ZyxalEwHc=" },
+                { "name": "pakchunk2_s48-Windows.pak", "hash": "dCU4Wb1FUhNI65Yk9g9j7dPFFd4=" },
+                { "name": "pakchunk2_s49-Windows.pak", "hash": "4r+vt8HFa+XXLPpg944Hi3CekYk=" },
+                { "name": "pakchunk2_s5-Windows.pak", "hash": "EQiAJ0xEt4GQKfKIoO4x2A4UqSQ=" },
+                { "name": "pakchunk2_s50-Windows.pak", "hash": "nbLzsNdVBQeEflN7/HYVsPLTLvM=" },
+                { "name": "pakchunk2_s51-Windows.pak", "hash": "vE3f/XlJB3+t7x/oU/9aOJcp3tw=" },
+                { "name": "pakchunk2_s52-Windows.pak", "hash": "RPM+IJY6MkIhxhkRCzg+zPYwcRo=" },
+                { "name": "pakchunk2_s53-Windows.pak", "hash": "oN3waFfouf4xevTWDC3m5YXINAU=" },
+                { "name": "pakchunk2_s54-Windows.pak", "hash": "wTydedp3VaUJY5lHH76fGr2cDZU=" },
+                { "name": "pakchunk2_s55-Windows.pak", "hash": "Zbjnd/jeS71L4dPPhTYmyOPT+XU=" },
+                { "name": "pakchunk2_s56-Windows.pak", "hash": "V4sudXeJz19JoThmw37048yoW80=" },
+                { "name": "pakchunk2_s57-Windows.pak", "hash": "+XfKFLeVNLLUiM3mTwjQ7ccvzUI=" },
+                { "name": "pakchunk2_s58-Windows.pak", "hash": "mlSR3Dq0mHBDKxVdowaKWiDXxFI=" },
+                { "name": "pakchunk2_s59-Windows.pak", "hash": "fGJozVBsuGlNuzW2NHSiMAQqEjk=" },
+                { "name": "pakchunk2_s6-Windows.pak", "hash": "lBQ2dvuVEz97+vzx1DSHuOjdQ1s=" },
+                { "name": "pakchunk2_s60-Windows.pak", "hash": "IK6dSwNsqMw8NFO2AcSzUvJZxdE=" },
+                { "name": "pakchunk2_s7-Windows.pak", "hash": "8cOyq4kgMEzdBdWqykFJAQG6WLU=" },
+                { "name": "pakchunk2_s8-Windows.pak", "hash": "0yCRTK0aIcXFR5UBs2cK/TUooQw=" },
+                { "name": "pakchunk2_s9-Windows.pak", "hash": "f5dkwj5yKhF9NqeY1+yNjtT+6s4=" },
+                { "name": "pakchunk2-Windows.pak", "hash": "Q0ACE8Alu39ouu5Xy69F4/5bAZk=" }
+              ]}
+          ]}
+      ]},
+    { "name": "FinalCypher.exe", "hash": "ap4SQiZC2RFoLxsCZXgGixc1QaY=" },
+    { "name": "Manifest_NonUFSFiles_Win64.txt", "hash": "/0Fv71MqS8Uj8hSeIl7ZIM8KWS8=" },
+    { "name": "Manifest_UFSFiles_Win64.txt", "hash": "CIPgOy6bqSm1hC+azDkTh+fUKPg=" }
+  ]}
