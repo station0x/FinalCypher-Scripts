@@ -1,5 +1,5 @@
-{ "name": "Windows", "hash": "d2Pr8TgDLQX226mfnlEwi4iCyrg=",
-  "Windows@children": [
+{ "name": "FCWindowsClient", "hash": "E4ErVO+kBLaEDnTYbR1iljhYbVQ=",
+  "FCWindowsClient@children": [
     { "name": "Engine", "hash": "ckaVn75BLUudD+NpRQC1hrwgjNU=",
       "Engine@children": [
         { "name": "Binaries", "hash": "b2hWNef0au9h/0lrXE00sOMe7N8=",
@@ -95,7 +95,7 @@
               ]}
           ]}
       ]},
-    { "name": "FinalCypher", "hash": "Ib83uT4/KydZGkq5VmNzx16d1DI=",
+    { "name": "FinalCypher", "hash": "KhseZWR0SHkwQSbF2SwY43PPUQQ=",
       "FinalCypher@children": [
         { "name": "Binaries", "hash": "r7+XExKTzEbfxc1O+FqRAQQHMxI=",
           "Binaries@children": [
@@ -168,7 +168,7 @@
                 { "name": "xinput1_3.dll", "hash": "kY9XW6v12H8huoU1YiR0uS6x1ek=" }
               ]}
           ]},
-        { "name": "Content", "hash": "cjxunUBDnLnHO+YzTXoQG1WeSxk=",
+        { "name": "Content", "hash": "YP6fxhOJJz4NUBijpP+xMdBIcV4=",
           "Content@children": [
             { "name": "Movies", "hash": "R90T81EBu8/bznFAlaHlDyr9eag=",
               "Movies@children": [
@@ -181,9 +181,9 @@
                     { "name": "ace.avi", "hash": "AHbgyxW4r4dMDx6y7/sUjW7p/9I=" }
                   ]}
               ]},
-            { "name": "Paks", "hash": "bsaLwxA+2JNLvDKNTMXP6e8EKDA=",
+            { "name": "Paks", "hash": "88U70C9Xi4yuQe04+rLouiwHADU=",
               "Paks@children": [
-                { "name": "pakchunk0-Windows.pak", "hash": "mYguRHh69Si7QJKiDT/qZMpFjqA=" },
+                { "name": "pakchunk0-Windows.pak", "hash": "uqGd5CNnxef6QjOkMVPLfON3LNU=" },
                 { "name": "pakchunk2_s1-Windows.pak", "hash": "JgaQlgTO4wX+WM+NNIKFKbUuFlI=" },
                 { "name": "pakchunk2_s10-Windows.pak", "hash": "XhjnLHdFh/KsQN7Zzp1D9VNhTkI=" },
                 { "name": "pakchunk2_s11-Windows.pak", "hash": "Gt7weHubdO/OYEXeswPlxArC8+w=" },
@@ -225,7 +225,7 @@
                 { "name": "pakchunk2_s44-Windows.pak", "hash": "7RB94tzBPgFXyp6c7Is36mQSM3s=" },
                 { "name": "pakchunk2_s45-Windows.pak", "hash": "gXXw76Sg2x66emVZp02WMtTo8uk=" },
                 { "name": "pakchunk2_s46-Windows.pak", "hash": "xRsunw+iH66XbA7a59kqv5ZndgU=" },
-                { "name": "pakchunk2_s47-Windows.pak", "hash": "SQTv5YLvAFykE/bsd6ZyxalEwHc=" },
+                { "name": "pakchunk2_s47-Windows.pak", "hash": "kNRBwMSK3awcY0OdaS0h/klxFOQ=" },
                 { "name": "pakchunk2_s48-Windows.pak", "hash": "dCU4Wb1FUhNI65Yk9g9j7dPFFd4=" },
                 { "name": "pakchunk2_s49-Windows.pak", "hash": "4r+vt8HFa+XXLPpg944Hi3CekYk=" },
                 { "name": "pakchunk2_s5-Windows.pak", "hash": "EQiAJ0xEt4GQKfKIoO4x2A4UqSQ=" },
@@ -249,6 +249,6 @@
           ]}
       ]},
     { "name": "FinalCypher.exe", "hash": "ap4SQiZC2RFoLxsCZXgGixc1QaY=" },
-    { "name": "Manifest_NonUFSFiles_Win64.txt", "hash": "/0Fv71MqS8Uj8hSeIl7ZIM8KWS8=" },
-    { "name": "Manifest_UFSFiles_Win64.txt", "hash": "CIPgOy6bqSm1hC+azDkTh+fUKPg=" }
+    { "name": "Manifest_NonUFSFiles_Win64.txt", "hash": "+IVsAl6sRuS5Sl+SzM+zmOvk+kc=" },
+    { "name": "Manifest_UFSFiles_Win64.txt", "hash": "CC8Rodj7nrQYpjRmF9Ezo5KAJ+E=" }
   ]}
