@@ -108,3 +108,5 @@ client-flattened
 
 # runtime builds
 space
+
+output/client/
