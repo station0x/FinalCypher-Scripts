@@ -107,6 +107,5 @@ dist
 client-flattened
 
 # runtime builds
-space
-
+space/*.json
 output/client/
