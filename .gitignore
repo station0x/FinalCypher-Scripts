@@ -104,8 +104,10 @@ dist
 .tern-port
 
 # Client files
+flattened
 client-flattened
+space
 
 # runtime builds
-space/*.json
+# space/*.json
 output/client/

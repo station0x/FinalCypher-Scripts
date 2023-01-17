@@ -168,7 +168,7 @@ async function main() {
     let merkleTree = await constructMerkleTree()
 
     // Writing Merkle Tree to File: [merkle.json]
-    oraPromise(writeMerkleTreeToStorage(merkleTree.stdout), { text: `[FC_SCRIPTS] Writing Merkle Tree to Storage...\n`, successText: '[FC_SCRIPTS] Done\n', failText: '[FC_SCRIPTS] Error!'});
+    await oraPromise(writeMerkleTreeToStorage(merkleTree.stdout), { text: `[FC_SCRIPTS] Writing Merkle Tree to Storage...\n`, successText: '[FC_SCRIPTS] Done\n', failText: '[FC_SCRIPTS] Error!'});
     let localTree = JSON.parse(merkleTree.stdout)
 
     // Downloading Remote Merkle Tree  and Read to memory
@@ -195,36 +195,44 @@ async function main() {
     // console.log(localDiffs, remoteDiffs)
 
     // flatten client build
-    oraPromise(flattenBuild(), { text: `[FC_SCRIPTS] Flattening client build...\n`, successText: '[FC_SCRIPTS] Done\n', failText: '[FC_SCRIPTS] Could not flatten.'});
+    await oraPromise(flattenBuild(), { text: `[FC_SCRIPTS] Flattening client build...\n`, successText: '[FC_SCRIPTS] Done\n', failText: '[FC_SCRIPTS] Could not flatten.'});
 
     // uploading changed assets
+    console.log(localDiffs)
     for(let diff in localDiffs) {
         let diffPath = remoteMapping[localDiffs[diff]]
         let diffId = assetsMapping[diffPath]
         if(diffId) {
             console.log('found', diffId, diffPath)
-            oraPromise(deleteReleaseAsset(diffId), { text: `[FC_DELETE] Deleting asset [${diffPath}] ...\n`, successText: `[FC_UPLOAD] ${diffPath} asset deleted successfully \n`, failText: `[FC_UPLOAD] ${diffPath}  did not delete asset, error occured. \n`});
+            // await oraPromise(deleteReleaseAsset(diffId), { text: `[FC_DELETE] Deleting asset [${diffPath}] ...\n`, successText: `[FC_UPLOAD] ${diffPath} asset deleted successfully \n`, failText: `[FC_UPLOAD] ${diffPath}  did not delete asset, error occured. \n`});
 
+            console.log('uploading file...')
             let file = fs.readFileSync(`client-flattened/${diffPath}`)
-            oraPromise(uploadReleaseAsset(diffPath, file ), { text: `[FC_UPLOAD] Uploading [${diffPath}] ...\n`, successText: `[FC_UPLOAD] ${diffPath} asset uploaded successfully \n`, failText: `[FC_UPLOAD] ${diffPath}  did not upload, error occured. \n`});
+            console.log(`client-flattened/${diffPath}`)
+            // await oraPromise(uploadReleaseAsset(diffPath, file ), { text: `[FC_UPLOAD] Uploading [${diffPath}] ...\n`, successText: `[FC_UPLOAD] ${diffPath} asset uploaded successfully \n`, failText: `[FC_UPLOAD] ${diffPath}  did not upload, error occured. \n`});
         } else {
+            console.log('uploading file...')
             let file = fs.readFileSync(`client-flattened/${diffPath}`)
-            oraPromise(uploadReleaseAsset(diffPath, file ), { text: `[FC_UPLOAD] Uploading [${diffPath}] ...\n`, successText: `[FC_UPLOAD] ${diffPath} asset uploaded successfully \n`, failText: `[FC_UPLOAD] ${diffPath}  did not upload, error occured. \n`});
+            console.log(`client-flattened/${diffPath}`)
+            // await oraPromise(uploadReleaseAsset(diffPath, file ), { text: `[FC_UPLOAD] Uploading [${diffPath}] ...\n`, successText: `[FC_UPLOAD] ${diffPath} asset uploaded successfully \n`, failText: `[FC_UPLOAD] ${diffPath}  did not upload, error occured. \n`});
         }
+        console.log('=========================================================')
     }
 
     // delete old remote files
     let remoteAssets = []
     for(let asset in assetsMapping) remoteAssets.push(asset)
     let oldRemoteAssets = remoteAssets.filter(val => !localNames.includes(val))
+    console.log(oldRemoteAssets)
     for (let asset in oldRemoteAssets) {
         let assetId = assetsMapping[oldRemoteAssets[asset]]
-        oraPromise(deleteReleaseAsset(assetId), { text: `[FC_DELETE] Deleting asset [${oldRemoteAssets[asset]}] ...\n`, successText: `[FC_UPLOAD] ${oldRemoteAssets[asset]} asset deleted successfully \n`, failText: `[FC_UPLOAD] ${oldRemoteAssets[asset]}  did not delete asset, error occured. \n`});
+        console.log('deleting: ', asset)
+        await oraPromise(deleteReleaseAsset(assetId), { text: `[FC_DELETE] Deleting asset [${oldRemoteAssets[asset]}] ...\n`, successText: `[FC_UPLOAD] ${oldRemoteAssets[asset]} asset deleted successfully \n`, failText: `[FC_UPLOAD] ${oldRemoteAssets[asset]}  did not delete asset, error occured. \n`});
     }
 
     // upload new merkle tree
     let mtFile = fs.readFileSync(`${basePath}merkle.json`)
-    oraPromise(uploadReleaseAsset('merkle.json', mtFile), { text: `[FC_UPLOAD] Uploading [merkle.json] ...\n`, successText: `[FC_UPLOAD] [merkle.json] asset uploaded successfully \n`, failText: `[FC_UPLOAD] [merkle.json] did not upload, error occured. \n`});
+    await oraPromise(uploadReleaseAsset('merkle.json', mtFile), { text: `[FC_UPLOAD] Uploading [merkle.json] ...\n`, successText: `[FC_UPLOAD] [merkle.json] asset uploaded successfully \n`, failText: `[FC_UPLOAD] [merkle.json] did not upload, error occured. \n`});
 
 }
-oraPromise(main(), { text: `[FC_SCRIPTS] Integrating Build...\n`, successText: '[FC_SCRIPTS] Done\n', failText: '[FC_SCRIPTS] Cannot build server'});
+await oraPromise(main(), { text: `[FC_SCRIPTS] Integrating Build...\n`, successText: '[FC_SCRIPTS] Done\n', failText: '[FC_SCRIPTS] Cannot build client'});
